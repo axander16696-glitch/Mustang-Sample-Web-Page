@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+             margin: 0;
+        }
+        .Main1{
+            height: 100vh;
+            width: 100vw;
+            background-color: black;
+            position: relative;
+        }
+        .sub1-1{
+            height: 70vh;
+            width: 100vw;
+            top:0vw;
+            left: 0vh;
+            position:absolute;
+            background-color: rgb(34, 189, 20);
+            overflow: hidden;             
+        
+        }
+        .sub1-2{
+            height: 30vh;
+            width: 100vw;
+            top: 70vh;
+            position:absolute;
+            background-color: rgb(228, 29, 29);
+            overflow: hidden;
+            transition: all 2s  ease-in-out;
+        }
+        .sub1-1 img{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        
+        }
+        .sub1-2 img{
+            height: 75vh;
+            width: 100vw;
+            position: absolute;       
+            object-fit:cover;    
+        
+        }
+        .Main1:hover .sub1-2{
+            height: 70vh;
+            top: 20vh;
+        }
+        .sub1-3{
+            top:2vw;
+            right:1vw;                                  
+            position:absolute;
+            font-size:x-large;
+        }
+        .sub1-3 td{
+            padding-right: 50px;
+        }
+        .sub1-4 {
+            width: 100vw;
+            height: 25vh;
+            position: absolute;
+            bottom: 30vh;
+            font-size: 100px;
+            text-align: center;
+            color: rgb(8, 3, 3);
+            transition: all 2s  ease-in-out;
+            left: -30vw;
+        }
+        .Main1:hover .sub1-4 {
+            left: 0vw;
+            bottom: 25vh;
+            color: blanchedalmond;
+            font-size: 50px;
+            z-index: 1;
+        }
+        .sub1-5{
+            position: absolute;git
+            top: 2vh;
+            left: 2vw;
+        }
+        .sub1-5 img{
+            width: 80px;
+            height: 100px;
+            border-radius: 50%;
+        }    
+        .Main-2 {
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(12, 12, 12);
+            position: relative;
+         }
+        .Main-2 video{
+            height: 100vh;
+            width: 100vw;
+            object-fit:cover;
+            overflow: hidden;
+        }
+        .Main-3{
+            height: 100vh;
+            width: 100vw;
+            background-color: black;
+            position: relative;
+            }
+        .Box3{
+            height: 50vh;
+            width:50vw;          
+        }
+        .Box3 img{
+            height: 50vh;
+            width:50vw;          
+            object-fit:cover;
+            overflow: hidden;
+            transition: all 1s ease-in-out;
+            position: relative;
+        }
+        .Box3 img:hover{
+            transform: scale3d(1.1, 1.1, 1.2);
+
+        }
+        .sub3-1{
+            background-color: blueviolet;
+            position: absolute;
+            left: 0vh;
+            top: 0vw;
+        }
+        .sub3-2{
+            background-color: rgb(62, 104, 184);
+            position: absolute;
+            top: 0vh;
+            right:0vw;
+        }
+        .sub3-3{
+            background-color: rgb(162, 184, 62);
+            position: absolute;
+            bottom:0vh;
+            left:0vw;
+        }   
+        .sub3-4{
+            background-color: rgb(207, 143, 23);
+            position: absolute;
+            bottom:0vh;
+            right:0vw;
+        }   
+        .Main-4{
+            height: 50vh;
+            width: 100vw;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        .Main-4 button{
+            height: 5vh;
+            width: 15vw;
+            background-color: rgb(176, 235, 230);
+            font-size:medium;
+            color: rgb(224, 18, 18);
+            border: 1px solid rgb(26, 19, 68);
+            border-radius: 5px;
+            
+        }
+        .Main-4 button:hover{
+            background-color: rgb(18, 241, 171);
+            color: rgb(3, 3, 3);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="Main1">
+        <div class="sub1-1">
+            <img src="https://cdn.dealeraccelerate.com/cam/34/6838/473819/1920x1440/1964-1-2-ford-mustang-hardtop" alt="IMAGE SPACE">
+         
+        </div>
+        <div class="sub1-2">
+            <img src="https://wallpaperbat.com/img/1228439-black-car-wallpaper-mustang-wallpaper-ford-mustang-gt-ford-mustang-wallpaper.jpg" alt="IMAGE SPACE">
+         
+        </div>
+        <div class="sub1-3">
+            <table>
+                <tr>
+                    <td>Home</td>
+                    <td>Models</td>
+                    <td>Bookings</td>
+                    <td>Racing</td>
+                    <td>Products</td>
+                    <td>Contact Us</td>
+                </tr>
+            </table>
+        </div>
+        <div class="sub1-4">
+            M U S T A N G
+     </div>
+     <div class="sub1-5">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXUSku93U2K3Wik9gYo_RadD4BQ99xCBZPww&s" alt=" BLANK IMG">
+     </div>
+    </div>
+     <div class="Main-2">
+        <video src="Mustang - GT 1.mp4" autoplay loop muted>
+        <source src="Mustang - GT 1.mp4" type="video/mp4">    
+        </video>        
+     </div>
+     <div class="Main-3">
+        <div class="Box3 sub3-1">
+            <img src="https://wallpapercave.com/dwp1x/wp9295516.jpg" alt="">
+        </div>
+        <div class="Box3 sub3-2">
+            <img src="https://wallpapercave.com/wp/wp2293784.jpg" alt="">
+        </div>
+        <div class="Box3 sub3-3">
+            <img src="https://wallpapercave.com/dwp1x/xAcj1z2.jpg" alt="">
+        </div>
+        <div class="Box3 sub3-4">
+            <img src="https://wallpapercave.com/dwp1x/wp9295631.jpg" alt="">
+        </div>
+        
+     </div>
+     <div class="Main-4">
+        <br><br><br>
+        <button>Details</button>
+        <br><br><br>
+        <p>
+            The Ford Mustang is an iconic American muscle car known for its bold design, powerful performance, and rich heritage. First introduced in 1964, the Mustang quickly became a symbol of speed, freedom, and innovation. With its aggressive styling, advanced technology, and a range of powerful engine options—from efficient EcoBoost to roaring V8 variants—the Mustang delivers an exciting driving experience. Blending classic muscle car character with modern features, the Ford Mustang continues to captivate car enthusiasts around the world and remains a true legend on the road.
+        </p>
+     </div>
+</body>
+</html>
