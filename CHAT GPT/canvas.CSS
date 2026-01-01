@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(to right, #5f2c82, #49a09d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background: #fff;
+    width: 800px;
+    height: 450px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .form-container {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    transition: 0.6s ease-in-out;
+  }
+  
+  .sign-in {
+    left: 0;
+  }
+  
+  .sign-up {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+  }
+  
+  .container.active .sign-up {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+  }
+  
+  .container.active .sign-in {
+    transform: translateX(100%);
+  }
+  
+  form {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    justify-content: center;
+  }
+  
+  input {
+    margin: 10px 0;
+    padding: 12px;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 12px;
+    background: #5f2c82;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .overlay-container {
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    z-index: 100;
+  }
+  
+  .container.active .overlay-container {
+    transform: translateX(-100%);
+  }
+  
+  .overlay {
+    background: linear-gradient(to right, #5f2c82, #49a09d);
+    color: #fff;
+    position: relative;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    transform: translateX(0);
+    transition: 0.6s ease-in-out;
+  }
+  
+  .container.active .overlay {
+    transform: translateX(50%);
+  }
+  
+  .overlay-panel {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+  }
+  
+  .overlay-left {
+    transform: translateX(-20%);
+  }
+  
+  .overlay-right {
+    right: 0;
+  }
+  
+  button.ghost {
+    background: transparent;
+    border: 1px solid #fff;
+  }

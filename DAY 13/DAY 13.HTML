@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(46, 46, 107);
+            margin: 0;
+        }
+        .main{
+            width: 50vw;
+            height:70vh;
+            background-color:  rgba(108, 200, 223, 0.575);
+            position: relative;
+            top: 10vh;
+            left: 25vw;
+            font-size: x-large;
+            color:white;
+            text-align:center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 50px;
+            border: solid rgb(168, 64, 64);
+        }
+        input{
+            width: 500px;
+            height: 40px;
+            border-radius: 20px;
+            font-size: large;
+            position: absolute;
+            top: 12vh;
+        }
+        button{
+            width: 200px;
+            height: 40px;
+            border-radius: 30px; 
+            background-color: pink;
+            color: rgb(0, 0, 0);
+            font-size: large;
+            cursor:pointer;
+            align-items: end;
+            justify-content: end;
+        }
+        ::placeholder{
+            font-size: larger;
+            color: black;
+            padding-left: 20px;
+            font-style: italic;
+        }
+       
+
+        .sub{
+            width: 40vw;
+            height: 3vw;
+            background-color: rgb(107, 11, 102);
+            border-radius: 10px;
+            color:white;
+            border: 2px solid black; 
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 20px;
+            padding-left: 30px;
+            position: relative;
+            
+        }
+        .removebutton{
+            width:100px ;
+            background-color: rgb(29, 236, 240);
+             border-radius: 10px;
+            border: 2px solid black;
+            cursor: pointer;
+            color: black;
+            position: absolute;
+            right: 1vw;
+            
+        }
+        .sub span{
+
+            position: absolute;
+            left: 5vw;
+            text-align: center;
+            overflow-y: hidden;
+        }
+        #todolist{
+            overflow-y: scroll;
+            scrollbar-width: none;
+            
+        }
+      
+    
+    </style>
+  
+</head>
+<body>
+    <div class="main">
+        <h1>To-Do list</h1>
+        <input type="text" id="ToDoInput" placeholder="Enter your Task">
+        <br>
+        <button onclick="addToDO()">Add Task </button>
+        <div id="todolist">
+            
+        </div>
+    </div>
+    <SCRIPT>
+        function addToDO(){
+            let taskvalue = document.getElementById(`ToDoInput`).value;
+            if(taskvalue==""){
+                return;
+            }
+            let taskstore = document.createElement("div");
+            taskstore.className = "sub";
+            
+            let tasktext = document.createElement("span");
+            tasktext.innerText = taskvalue;
+       
+            let removebutton = document.createElement("button");
+            removebutton.innerText = "Remove";
+            removebutton.className="removebutton";
+            removebutton.onclick = function(){
+                taskstore.remove();
+            }
+            taskstore.appendChild(tasktext);
+            taskstore.appendChild(removebutton);
+            document.getElementById("todolist").appendChild(taskstore);
+            document.getElementById(`ToDoInput`).value="";
+            
+
+
+        }
+    </SCRIPT>
+</body>
+</html>

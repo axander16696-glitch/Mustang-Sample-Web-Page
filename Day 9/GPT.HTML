@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio GPT</title>
+
+<style>
+body {
+    margin: 0;
+    background: linear-gradient(200deg, #023197, #000000);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.box1 {
+    text-align: center;
+    width: 100%;
+    background: linear-gradient(200deg, #08090a, #06000a);
+    font-size: xx-large;
+}
+
+/* Main container */
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+}
+
+/* About box */
+.box2 {
+    width: 40vw;
+    min-height: 40vh;
+    font-size: x-large;
+    text-align: center;
+    border-radius: 30px;
+    padding: 20px;
+    background: linear-gradient(200deg, #8ddd0b, #9800e4);
+}
+
+/* Image box */
+.box3 {
+    width: 20vw;
+    height: 50vh;
+    overflow: hidden;
+    border-radius: 20px;
+    
+}
+
+.box3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Button */
+.box2 button {
+    width: 200px;
+    height: 40px;
+    border-radius: 30px;
+    font-size: large;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(to left, rgb(47, 228, 189), rgb(24, 11, 207));
+    color: white;
+}
+
+/* Email */
+.box4 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Projects */
+.container1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+}
+
+.project {
+    width: 20vw;
+    height: 20vh;
+    background-color: brown;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .box1 {
+        font-size: 22px;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .box2 {
+        width: 90%;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .box3 {
+        width: 90%;
+        height: 40vh;
+    }
+
+    .project {
+        width: 90%;
+        height: 25vh;
+    }
+
+    .box4 {
+        font-size: 20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="box1">
+    <h1>ALEXANDER S</h1>
+</div>
+
+<div class="container">
+    <div class="box2">
+        <h1>ALEXANDER S</h1>
+        <h2>Web Developer</h2>
+        <p>
+            Passionate web developer creating modern, responsive, and user-friendly websites using HTML, CSS, and JavaScript.
+        </p>
+        <br>
+        <button>Explore</button>
+    </div>
+
+    <div class="box3">
+        <img src="images (1).jpg" alt="Profile Image">
+    </div>
+</div>
+
+<div class="box4">
+    <h2>xxxxxx@gmail.com</h2>
+</div>
+
+<div class="container1">
+    <div class="project"></div>
+    <div class="project"></div>
+    <div class="project"></div>
+    <div class="project"></div>
+</div>
+
+</body>
+</html>

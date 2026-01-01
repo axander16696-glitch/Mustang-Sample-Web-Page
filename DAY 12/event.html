@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY 12</title>
+    <style>
+        body{
+            margin:0;
+            background-color: rgb(80, 71, 71);
+        }
+        .main{
+            width: 80vw;
+            height: 90vh;
+            background-color: rgb(245, 245, 245);
+            position: relative ;
+            top:5vh;
+            left: 10vw;
+            border-radius: 50px;
+            padding: 30px;
+        }
+        .box1{
+            width: 30vw;
+            height: 60vh;
+            background-color: rgb(235, 126, 211);
+            position: relative;
+            top:5vh;
+            left: 45vw;
+            overflow: hidden;
+            border-radius: 40px;   
+
+
+        }
+        .box1 img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 40px;
+        }
+        .box2{
+            width: 20vw;
+            height: 20vh;
+           border: 2px solid black;
+            position: absolute;
+            top: 10vh;
+            left: 5vw;          
+        }
+        .color1{
+            width: 20vw;
+            height: 15vh;
+            background-color: rgb(235, 126, 211);
+            
+        }
+        .box3{
+            width: 20vw;
+            height: 20vh;
+            border: 2px solid black;   
+            left: 5vw;
+            position: absolute;
+            bottom: 10vh;
+                 
+           
+        }
+        .color2{
+            width: 20vw;
+            height: 15vh;
+            background-color: rgb(77, 163, 44);
+            
+        }
+        button{
+            width: 20vw;
+            height: 5vh;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            font-size: large;
+
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKfwH40Rh3DNMeslF_86k96NqkCAbW4IUtnA&s" alt="Images">
+        </div>
+        <div class="box2">
+            <div class="color1">
+            </div>
+            <button id="B1" onclick="changeBotto()">Change</button>
+            
+
+        </div>
+        <div class="box3">
+            <div class="color2">
+
+            </div>
+            <button id="B2" onclick="changeTop()">Change</button>
+            
+
+        </div>
+
+    </div>
+</body>
+<script>
+   
+    function changeBotto(){
+        let r =0
+    let g =0
+    let b =0
+    count = 0
+        
+        count=count+0.2;
+        r=r+count;
+        g=g+count;
+        b=b+count;
+        document.getElementsByClassName('color2')[0].style.backgroundColor=`rgb(${r},${g},${b})`;
+        
+
+    }
+    let r =0
+    let g =0
+    let b =0
+    count = 0
+    function changeTop(){
+        
+        count=count+0.1;
+        r=r+count;
+        g=g+count;
+        b=b+count;
+        document.getElementsByClassName('color1')[0].style.backgroundColor=`rgb(${r},${g},${b})`;
+        
+
+    }
+</script>
+</html>

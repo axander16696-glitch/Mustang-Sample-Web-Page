@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        margin:0;
+        }
+        .main{
+            width: 40vw;
+            height: 70vh;
+            background-color: rgb(217, 231, 13);
+            position: relative;
+            top: 10vh;
+            left: 30vw;
+            font-size: x-large;
+            color: black;
+            gap:10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 2px solid black;
+            border-radius: 30px;
+
+        }
+        input{
+            width: 20vw;
+            height: 5vh;
+            background-color: rgb(235, 235, 235);    
+            top: 10vh;
+            left: 30vw;
+            font-size: x-large;
+            color: black;
+            gap:10px;
+           
+        }
+        button{ 
+            width: 10vw;
+            height: 5vh;
+            background-color: rgb(70, 185, 214);    
+            top: 10vh;
+            left: 30vw;
+            font-size: x-large;
+            color: black;
+            gap:10px;
+            align-items: end;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        <h1>Password saver</h1>
+        <input type="text" id="Password" placeholder="Enter your password">
+        <input type="text" id="key" placeholder="Enter your password key">
+        <button onclick="add()">Add</button>
+        <div id="result">
+
+        </div>
+        <input type="text" id="searchInput" placeholder="Search here">
+        <button onclick="Search()">Search</button>
+        <button onclick="remove()">Remove</button>
+      
+
+    </div>
+    <script>
+        function add(){
+            let store= document.getElementById("Password").value
+            let key = document.getElementById("key").value
+            localStorage.setItem(key,store)
+        }
+        function remove(){
+            localStorage.clear()
+        }
+        function Search(){
+            let searchvalue = document.getElementById("searchInput").value
+            let data = localStorage.getItem(searchvalue);
+            document.getElementById("result").innerText = data;            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=., initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+
+        }
+        .grid{
+            background-color: blue;
+            height: 100vh;
+            display: grid;
+            grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+            grid-template-rows: 1fr;
+            gap: 30px;
+            padding: 30px;
+           align-content: center;
+           justify-content: center;
+
+
+        }
+        .box{
+        
+            aspect-ratio: 1/1;
+            border-radius: 20px;
+        }
+        .box img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+           
+        }
+        h1{
+            text-align: center;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        dwedfe
+    </h1>
+    <div class="grid">
+        <div class="box">
+            <img src="https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iphone_11-rosette-family-lineup-091019_big.jpg.large.jpg" alt="image">
+          </div>
+        <div class="box">
+            <img src="https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iphone_11-rosette-family-lineup-091019_big.jpg.large.jpg" alt="image">
+          </div>
+        <div class="box">
+            <img src="https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iphone_11-rosette-family-lineup-091019_big.jpg.large.jpg" alt="image">
+          </div>
+        <div class="box">
+            <img src="https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iphone_11-rosette-family-lineup-091019_big.jpg.large.jpg" alt="image">
+          </div>
+        <div class="box">
+            <img src="https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iphone_11-rosette-family-lineup-091019_big.jpg.large.jpg" alt="image">
+          </div>
+    </div>
+</body>
+</html>

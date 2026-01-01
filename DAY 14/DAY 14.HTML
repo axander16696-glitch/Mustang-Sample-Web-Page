@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=d, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id= "username" placeholder="Enter Your name">
+    <button onclick="addData()">Submit</button>
+    <h1 id="content"> </h1>
+    <script>
+      let userdata=[];
+      let index=0;
+      function addData(){
+        let value= document.getElementById("username").value;
+        userdata.push(value);
+        document.getElementById("content").innerText=userdata[index]
+        document.getElementById("username").value="";   
+      }
+    </script>
+    
+</body>
+</html>
