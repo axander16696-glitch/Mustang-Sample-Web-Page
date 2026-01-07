@@ -1,0 +1,13 @@
+.Middle{
+    width: 100vw;
+    height: 70vh;
+    background-color: rgb(185, 243, 235);
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.Main{
+    display: flex;
+    justify-content: space-evenly;
+
+
+}

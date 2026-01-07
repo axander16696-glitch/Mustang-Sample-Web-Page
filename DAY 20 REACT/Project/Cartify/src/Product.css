@@ -1,0 +1,56 @@
+.Product{
+    background-color: rgb(164, 189, 190);
+    width: 250px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    text-align:center;
+    font-size: large;
+    opacity: 1;
+}
+.Product1{
+    opacity: 0.3;
+    background-color: rgb(8, 22, 22);
+    width: 250px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    text-align:center;
+    font-size: large;
+   
+}
+.Product img{
+    width: 200px;
+    height: 150px;
+    border-radius: 20px;
+
+}
+.Product1 img{
+    width: 200px;
+    height: 150px;
+    border-radius: 20px;
+
+}
+ .Addbutton{
+    width: 150px;
+    height: 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(30, 82, 194);
+    border: 1px solid rgb(19, 16, 16);
+    border-radius: 20px;
+    font-size: large;
+    font-family: cursive;
+    cursor: pointer;
+ }
+    .Addbutton1{
+        width: 150px;
+        height: 30px;
+        color: rgb(214, 54, 54);
+        background-color: rgb(194, 150, 30);
+        border: 1px solid rgb(19, 16, 16);
+        border-radius: 20px;
+        font-size: large;
+        font-family: cursive;
+        cursor: pointer;
+}
+.Product:hover img{
+    transform: scale(1.2);
+}

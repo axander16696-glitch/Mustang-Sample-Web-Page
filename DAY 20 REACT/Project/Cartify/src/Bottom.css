@@ -1,0 +1,11 @@
+.Bottom{
+    width: 100vw;
+    height:10vh;
+    background-color: rgb(234, 236, 84);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(253, 0, 0);
+    font-size: 10px;
+    font-family: cursive;
+}
